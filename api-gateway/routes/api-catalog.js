@@ -14,6 +14,8 @@
 
 var express = require('express');
 var router = express.Router();
+
+
 var auth_controller = require('../controllers/authController');
 
 //POST request for registering a user
