@@ -37,3 +37,10 @@ const User = module.exports = mongoose.model('User', userSchema);
      var query = {_id: id};
      User.findById(query, callback);
  };
+
+ // get by email
+ module.exports.getOne = (e, callback) => {
+     var query = {email: e};
+     User.findOne(query, callback);
+ };
+ 
